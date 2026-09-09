@@ -306,6 +306,13 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .copied { border-color: var(--accent); color: var(--accent); }
 .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 1.75rem; font-weight: 500; font-size: 0.95rem; color: var(--text-2); }
 .contact-links a:hover { color: var(--text); }
+.freelance { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 1.75rem; }
+.freelance-card { display: grid; gap: 0.2rem; min-width: 190px; padding: 0.9rem 1.2rem; border-radius: 12px; border: 1px solid var(--border); background: var(--surface-2); text-align: left; transition: border-color 0.15s, transform 0.2s; }
+.freelance-card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+.freelance-name { font-weight: 600; }
+.freelance-handle { font-size: 0.72rem; color: var(--text-2); }
+.freelance-stars { font-size: 0.8rem; color: #f5b301; letter-spacing: 0.05em; margin-top: 0.3rem; }
+.freelance-stars b { color: var(--text); font-family: var(--mono); font-weight: 600; letter-spacing: 0; margin-left: 0.2rem; }
 
 /* ---------- Visitor counter ---------- */
 .visits { padding-bottom: 1.25rem; }
