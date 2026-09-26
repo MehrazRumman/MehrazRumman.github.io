@@ -219,7 +219,7 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .tile-stats { grid-column: span 4; grid-row: span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
 .stat { display: flex; flex-direction: column; justify-content: flex-end; padding: 0.75rem; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--border); }
 .stat-num { font-size: 2.1rem; font-weight: 600; letter-spacing: -0.04em; line-height: 1; }
-.stat-cap { margin-top: 0.4rem; font-family: var(--mono); font-size: 0.68rem; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; }
+.stat-cap { margin-top: 0.4rem; line-height: 1.5; min-height: 3em; font-family: var(--mono); font-size: 0.68rem; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; }
 .tile-about { grid-column: span 7; }
 .tile-edu { grid-column: span 3; }
 .tile-geo { grid-column: span 2; }
@@ -390,3 +390,4 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
   .btn-lg { font-size: 0.95rem; padding: 0.85rem 1.2rem; word-break: break-all; }
   .footer { flex-direction: column; }
 }
+.visits-total-only .visits-week { display: none; }
