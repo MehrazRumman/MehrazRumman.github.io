@@ -209,7 +209,7 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .gh-meta { font-size: 0.68rem; margin-top: 0.15rem; }
 
 /* ---------- Bento ---------- */
-.intro-video { padding-block: 1rem 1.5rem; }
+.intro-video { padding-block: 1rem clamp(3rem, 6vw, 5rem); }
 .intro-video .eyebrow a { color: var(--text-2); text-transform: none; letter-spacing: 0; }
 .intro-video .eyebrow a:hover { color: var(--text); }
 .video-frame { aspect-ratio: 16 / 9; max-width: 960px; margin-inline: auto; background: var(--bg-2); }
