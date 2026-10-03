@@ -244,6 +244,23 @@ var ANALYTICS = {
     copyBtn.hidden = true;
   }
 
+  /* ---------- Intro video: load and autoplay (muted) once it is on screen ---------- */
+  var player = document.getElementById('intro-player');
+  if (player) {
+    var startPlayer = function (autoplay) {
+      if (player.src) return;
+      player.src = player.getAttribute('data-src') + (autoplay ? '&autoplay=1&mute=1' : '');
+    };
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      var playerIo = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) { startPlayer(true); playerIo.disconnect(); }
+      }, { threshold: 0.4 });
+      playerIo.observe(player);
+    } else {
+      startPlayer(false);
+    }
+  }
+
   /* ---------- Footer year ---------- */
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());

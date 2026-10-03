@@ -209,6 +209,13 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .gh-meta { font-size: 0.68rem; margin-top: 0.15rem; }
 
 /* ---------- Bento ---------- */
+.intro-video { padding-block: 1rem 1.5rem; }
+.intro-video .eyebrow a { color: var(--text-2); text-transform: none; letter-spacing: 0; }
+.intro-video .eyebrow a:hover { color: var(--text); }
+.video-frame { aspect-ratio: 16 / 9; max-width: 960px; margin-inline: auto; background: var(--bg-2); }
+.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.intro-video .eyebrow { max-width: 960px; margin-inline: auto; margin-bottom: 0.8rem; }
+
 .bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: auto; gap: 1rem; padding-block: 1.5rem 2rem; }
 .tile { padding: 1.35rem 1.4rem; }
 .tile-label { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 0.65rem; }
