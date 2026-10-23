@@ -261,17 +261,37 @@
       </header>
 
       <div class="grid grid-2">
-        <a class="card project project-featured reveal" href="https://github.com/MehrazRumman/gortb" target="_blank" rel="noopener">
-          <div class="project-top"><span class="mono">Library · Go</span><span class="arr-box" aria-hidden="true">↗</span></div>
-          <h3 class="project-title">GoRTB</h3>
-          <p>A full OpenRTB 2.5 implementation in Go: type-safe bid request and response structs, validation, and fast JSON serialization for real-time bidding systems.</p>
-          <ul class="chips"><li>Go</li><li>OpenRTB 2.5</li><li>Ad-tech</li></ul>
+        <a class="card project project-featured project-media reveal" href="https://github.com/MehrazRumman/gortb" target="_blank" rel="noopener">
+          <div class="analysis-cover code-window" aria-hidden="true">
+            <div class="code-bar"><span></span><span></span><span></span><em>main.go</em></div>
+<pre><code>req := &amp;<i class="t">gortb.BidRequest</i>{
+    ID: <b class="s">"bid-req-1"</b>,
+    Imp: []<i class="t">gortb.Imp</i>{{
+        ID:       <b class="s">"imp-1"</b>,
+        Banner:   &amp;<i class="t">gortb.Banner</i>{W: <b class="n">300</b>, H: <b class="n">250</b>},
+        BidFloor: <b class="n">0.5</b>, BidFloorCur: <b class="s">"USD"</b>,
+    }},
+}
+<u class="k">if</u> err := req.Validate(); err != <u class="k">nil</u> {
+    <span class="c">// ErrMissingID, ErrNoMediaPresent, ...</span>
+}
+body, _ := json.Marshal(req)</code></pre>
+          </div>
+          <div class="analysis-body">
+            <div class="project-top"><span class="mono">Library · Go</span><span class="arr-box" aria-hidden="true">↗</span></div>
+            <h3 class="project-title">GoRTB</h3>
+            <p>A full OpenRTB 2.5 implementation in Go: type-safe bid request and response structs, recursive validation with sentinel errors, and wire-format JSON tags. Standard library only.</p>
+            <ul class="chips"><li>Go</li><li>OpenRTB 2.5</li><li>Ad-tech</li></ul>
+          </div>
         </a>
-        <a class="card project project-featured reveal" href="https://github.com/MehrazRumman/fastapi-observer" target="_blank" rel="noopener">
-          <div class="project-top"><span class="mono">Middleware · Python</span><span class="arr-box" aria-hidden="true">↗</span></div>
-          <h3 class="project-title">fastapi-observer</h3>
-          <p>Zero-boilerplate structured logging and observability for FastAPI. Pluggable storage backends (in-memory, JSON, SQLite), filtering, and a built-in dashboard for browsing events.</p>
-          <ul class="chips"><li>Python</li><li>FastAPI</li><li>Observability</li></ul>
+        <a class="card project project-featured project-media reveal" href="https://github.com/MehrazRumman/fastapi-observer" target="_blank" rel="noopener">
+          <span class="analysis-cover"><img src="assets/img/fastapi-inspector-dashboard.webp" alt="The built-in Observer Dashboard listing captured FastAPI request events with level, method, path and status" width="1200" height="630" loading="lazy"></span>
+          <div class="analysis-body">
+            <div class="project-top"><span class="mono">Middleware · Python</span><span class="arr-box" aria-hidden="true">↗</span></div>
+            <h3 class="project-title">fastapi-observer</h3>
+            <p>Zero-boilerplate structured logging and observability for FastAPI. Pluggable storage backends (in-memory, JSON, SQLite), filtering, and a built-in dashboard for browsing events. On PyPI as <code>fastapi-inspector</code>.</p>
+            <ul class="chips"><li>Python</li><li>FastAPI</li><li>Observability</li><li>PyPI</li></ul>
+          </div>
         </a>
       </div>
 

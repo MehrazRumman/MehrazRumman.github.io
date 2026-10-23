@@ -317,6 +317,20 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .analysis-thumbs img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
 .analysis .links-row { margin-top: auto; padding-top: 1rem; }
 
+.project-media { display: flex; flex-direction: column; padding: 0; }
+.project-media .analysis-body { padding: 1.5rem 1.75rem 1.75rem; }
+.project-media:hover .analysis-cover img { transform: scale(1.03); }
+.project code { font-family: var(--mono); font-size: 0.85em; color: var(--text); }
+.code-window { background: #0b0b10; display: flex; flex-direction: column; }
+.code-bar { display: flex; align-items: center; gap: 6px; padding: 0.6rem 0.9rem; border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
+.code-bar span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255, 255, 255, 0.14); }
+.code-bar span:first-child { background: #ff5f57; } .code-bar span:nth-child(2) { background: #febc2e; } .code-bar span:nth-child(3) { background: #28c840; }
+.code-bar em { margin-left: 0.6rem; font-style: normal; font-family: var(--mono); font-size: 0.72rem; color: #8a8a94; }
+.code-window pre { flex: 1; margin: 0; padding: 0.9rem 1.1rem; overflow: hidden; font-family: var(--mono); font-size: clamp(0.6rem, 0.95vw, 0.7rem); line-height: 1.6; color: #d4d4d8; }
+.code-window code { font-size: inherit; color: inherit; }
+.code-window i, .code-window b, .code-window u { font-style: normal; font-weight: 400; text-decoration: none; }
+.code-window .t { color: #67e8f9; } .code-window .s { color: #a5e6a1; } .code-window .n { color: #fbbf77; } .code-window .k { color: #c4b5fd; } .code-window .c { color: #6e6e78; }
+
 /* ---------- Open source ---------- */
 .oss { display: block; padding: 1.3rem 1.4rem; }
 .oss-top { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
@@ -412,6 +426,7 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 @media (max-width: 640px) {
   .tile-github, .tile-now, .tile-stats, .tile-about, .tile-edu, .tile-geo { grid-column: span 12; grid-row: auto; }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .code-window { aspect-ratio: auto; }
   .analysis-stats { grid-template-columns: 1fr 1fr 1fr; gap: 0.4rem; }
   .analysis-stats div { padding: 0.55rem 0.6rem; }
   .analysis-stats dt { font-size: 1.02rem; }
