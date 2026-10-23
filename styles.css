@@ -269,6 +269,11 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .tl-loc { font-size: 0.85rem; color: var(--text-3); }
 .tl-card { padding: 1.4rem 1.5rem; }
 .tl-title { font-size: 1.25rem; margin-bottom: 0.9rem; }
+.tl-head { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 0.9rem; }
+.tl-head .tl-title { margin-bottom: 0; }
+.tl-logo { flex: none; width: 44px; height: 44px; padding: 7px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: #fff; object-fit: contain; }
+.tl-logo-bleed { padding: 1px; }
+.tl-mark { display: grid; place-items: center; padding: 0; font-family: var(--mono); font-size: 0.85rem; font-weight: 600; color: var(--text); background: var(--surface-2); }
 .tl-at { color: var(--text-2); font-weight: 500; }
 .tl-at::before { content: "· "; color: var(--text-3); }
 .bullets { display: grid; gap: 0.55rem; }
