@@ -366,6 +366,8 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .skill { padding: 1.3rem 1.4rem; }
 .rank { display: flex; align-items: center; gap: 1rem; padding: 0.95rem 1.2rem; font-size: 0.95rem; }
 .rank .badge { min-width: 6.6rem; justify-content: center; }
+.rank-logo { flex: none; width: 36px; height: 36px; padding: 3px; border-radius: 9px; border: 1px solid var(--border); background: #fff; object-fit: contain; }
+.rank-logo.logo-mark { padding: 0; font-size: 0.56rem; letter-spacing: -0.02em; color: var(--text); background: var(--surface-2); }
 .post { display: block; padding: 1.3rem 1.4rem; }
 .post-top { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; }
 .post-logo { flex: none; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border); background: #fff; object-fit: contain; }
@@ -459,6 +461,8 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 @media (max-width: 640px) {
   .tile-github, .tile-now, .tile-stats, .tile-about, .tile-edu, .tile-geo { grid-column: span 12; grid-row: auto; }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .rank { flex-wrap: wrap; gap: 0.6rem 0.8rem; }
+  .rank > span:last-child { flex-basis: 100%; }
   .code-window { aspect-ratio: auto; }
   .analysis-stats { grid-template-columns: 1fr 1fr 1fr; gap: 0.4rem; }
   .analysis-stats div { padding: 0.55rem 0.6rem; }
