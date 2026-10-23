@@ -44,6 +44,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Work</a></li>
+        <li><a href="#analysis">Analysis</a></li>
         <li><a href="#open-source">Open Source</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#writing">Writing</a></li>
@@ -314,10 +315,73 @@
       </div>
     </section>
 
+    <!-- ================= DATA ANALYSIS ================= -->
+    <section class="section container" id="analysis">
+      <header class="section-head reveal">
+        <p class="eyebrow">03 — Data analysis</p>
+        <h2 class="section-title">Public data, cleaned and mapped</h2>
+        <p class="section-sub">Open, reproducible studies of Bangladesh built from government reports and press data. Every row keeps a link to its source.</p>
+      </header>
+
+      <div class="grid grid-2">
+        <article class="card analysis reveal">
+          <a class="analysis-cover" href="https://mehrazrumman.github.io/BD-Road-Accident/" target="_blank" rel="noopener">
+            <img src="assets/img/road-accident-map.webp" alt="Interactive Bangla map of road deaths by division in Bangladesh, with accident-prone highway spots marked" width="1200" height="630" loading="lazy">
+            <span class="badge badge-grad">Live map</span>
+          </a>
+          <div class="analysis-body">
+            <div class="project-top"><span class="mono">Jupyter · Road safety</span><span class="mono analysis-years">2021 – 2026</span></div>
+            <h3 class="project-title">Bangladesh Road Accidents</h3>
+            <p>Road Safety Foundation and official BRTA monthly reports, transcribed from scanned PDFs, checked against each report's totals and analysed by year, vehicle, division and season. Ships with an interactive Bangla map of all 64 districts and 215 accident-prone highway spots.</p>
+            <dl class="analysis-stats">
+              <div><dt>7,359</dt><dd>road deaths in 2025</dd></div>
+              <div><dt>36%</dt><dd>of them on motorcycles</dd></div>
+              <div><dt>+26–51%</dt><dd>deaths per day during Eid travel</dd></div>
+            </dl>
+            <div class="analysis-thumbs">
+              <a href="https://github.com/MehrazRumman/BD-Road-Accident/blob/main/figures/01_deaths_per_year.png" target="_blank" rel="noopener"><img src="assets/img/road-deaths.webp" alt="Chart of road deaths per year, 2021 to 2026" width="720" height="375" loading="lazy"></a>
+              <a href="https://github.com/MehrazRumman/BD-Road-Accident/blob/main/figures/08_monthly_heatmap.png" target="_blank" rel="noopener"><img src="assets/img/road-heat.webp" alt="Heatmap of road deaths per day by month and year" width="720" height="286" loading="lazy"></a>
+            </div>
+            <ul class="chips"><li>pandas</li><li>matplotlib</li><li>seaborn</li><li>Leaflet</li><li>Jupyter</li></ul>
+            <p class="links-row">
+              <a href="https://mehrazrumman.github.io/BD-Road-Accident/" target="_blank" rel="noopener">Interactive map <span class="arr" aria-hidden="true">↗</span></a>
+              <a href="https://github.com/MehrazRumman/BD-Road-Accident" target="_blank" rel="noopener">Repository <span class="arr" aria-hidden="true">↗</span></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card analysis reveal">
+          <a class="analysis-cover" href="https://github.com/MehrazRumman/dengue-analysis/blob/main/notebooks/dengue_analysis.ipynb" target="_blank" rel="noopener">
+            <img src="assets/img/dengue-map.webp" alt="Maps of dengue cases per 100,000 people by division in Bangladesh, 2025 compared with 2026" width="1200" height="633" loading="lazy">
+            <span class="badge badge-grad">Notebook</span>
+          </a>
+          <div class="analysis-body">
+            <div class="project-top"><span class="mono">Jupyter · Public health</span><span class="mono analysis-years">2000 – 2026</span></div>
+            <h3 class="project-title">Dengue in Bangladesh</h3>
+            <p>Where dengue strikes, how the hot zones shift and who dies. Joins DGHS surveillance, district case counts, census population and climate data into hotspot maps, case fatality rates, seasonality and temperature-lag correlations.</p>
+            <dl class="analysis-stats">
+              <div><dt>116,990</dt><dd>cases in 2026, second-worst year</dd></div>
+              <div><dt>3.8×</dt><dd>Barishal vs national rate, 2025</dd></div>
+              <div><dt>~2×</dt><dd>fatality rate for women vs men</dd></div>
+            </dl>
+            <div class="analysis-thumbs">
+              <a href="https://github.com/MehrazRumman/dengue-analysis/blob/main/figures/03_hotspot_heatmap_division_year.png" target="_blank" rel="noopener"><img src="assets/img/dengue-heat.webp" alt="Heatmaps of dengue incidence and relative risk by division, 2020 to 2026" width="720" height="279" loading="lazy"></a>
+              <a href="https://github.com/MehrazRumman/dengue-analysis/blob/main/figures/09_weekly_2026_vs_2025.png" target="_blank" rel="noopener"><img src="assets/img/dengue-weekly.webp" alt="Weekly dengue cases in 2026 compared with 2025" width="720" height="320" loading="lazy"></a>
+            </div>
+            <ul class="chips"><li>pandas</li><li>GeoPandas</li><li>NumPy</li><li>matplotlib</li><li>Jupyter</li></ul>
+            <p class="links-row">
+              <a href="https://github.com/MehrazRumman/dengue-analysis/blob/main/notebooks/dengue_analysis.ipynb" target="_blank" rel="noopener">Read the analysis <span class="arr" aria-hidden="true">↗</span></a>
+              <a href="https://github.com/MehrazRumman/dengue-analysis" target="_blank" rel="noopener">Repository <span class="arr" aria-hidden="true">↗</span></a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- ================= APPS ================= -->
     <section class="section container" id="apps">
       <header class="section-head reveal">
-        <p class="eyebrow">03 — App development</p>
+        <p class="eyebrow">04 — App development</p>
         <h2 class="section-title">On the Play Store, and on the way</h2>
         <p class="section-sub">One app live on Google Play and two more in active development.</p>
       </header>
@@ -347,7 +411,7 @@
     <!-- ================= SCRAPING ================= -->
     <section class="section container" id="scraping">
       <header class="section-head reveal">
-        <p class="eyebrow">04 — Web scraping</p>
+        <p class="eyebrow">05 — Web scraping</p>
         <h2 class="section-title">Turning websites into datasets</h2>
         <p class="section-sub">Crawlers and extraction pipelines that ship clean, structured data from messy sites.</p>
       </header>
@@ -383,7 +447,7 @@
     <!-- ================= OPEN SOURCE ================= -->
     <section class="section container" id="open-source">
       <header class="section-head reveal">
-        <p class="eyebrow">05 — Open source</p>
+        <p class="eyebrow">06 — Open source</p>
         <h2 class="section-title">Patches in the tools I use daily</h2>
       </header>
 
@@ -422,7 +486,7 @@
     <!-- ================= SKILLS ================= -->
     <section class="section container" id="skills">
       <header class="section-head reveal">
-        <p class="eyebrow">06 — Skills</p>
+        <p class="eyebrow">07 — Skills</p>
         <h2 class="section-title">What I reach for</h2>
       </header>
 
@@ -457,7 +521,7 @@
     <!-- ================= CONTESTS ================= -->
     <section class="section container" id="contests">
       <header class="section-head reveal">
-        <p class="eyebrow">07 — Competitive programming</p>
+        <p class="eyebrow">08 — Competitive programming</p>
         <h2 class="section-title">Contests &amp; hackathons</h2>
         <p class="section-sub">Specialist on <a href="https://codeforces.com/profile/keai33" target="_blank" rel="noopener">Codeforces</a> as keai33 · 3★ on CodeChef · problems on LeetCode and HackerRank.</p>
       </header>
@@ -475,7 +539,7 @@
     <!-- ================= WRITING ================= -->
     <section class="section container" id="writing">
       <header class="section-head reveal">
-        <p class="eyebrow">08 — Talks &amp; writing</p>
+        <p class="eyebrow">09 — Talks &amp; writing</p>
         <h2 class="section-title">Said out loud</h2>
       </header>
 
@@ -506,7 +570,7 @@
     <!-- ================= TEACHING ================= -->
     <section class="section container" id="teaching">
       <header class="section-head reveal">
-        <p class="eyebrow">09 — Teaching &amp; mentoring</p>
+        <p class="eyebrow">10 — Teaching &amp; mentoring</p>
         <h2 class="section-title">Teaching programming &amp; AI</h2>
         <p class="section-sub">One-on-one sessions across time zones — from first lines of code to contest algorithms to putting AI to work in a product team.</p>
       </header>
@@ -533,7 +597,7 @@
     <!-- ================= CONTACT ================= -->
     <section class="section container" id="contact">
       <div class="card contact reveal">
-        <p class="eyebrow">10 — Contact</p>
+        <p class="eyebrow">11 — Contact</p>
         <h2 class="contact-title">Let's build <span class="grad">something.</span></h2>
         <p class="contact-copy">Backend roles, freelance projects, open-source collaboration, or a question about GSoC. My inbox is open.</p>
         <div class="email-line">
