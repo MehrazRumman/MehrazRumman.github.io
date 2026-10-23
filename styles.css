@@ -240,6 +240,7 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .marquee-track { display: flex; gap: 2.5rem; width: max-content; padding-inline: 1.25rem; animation: marquee 38s linear infinite; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 .marquee-track li { font-family: var(--mono); font-size: 0.8rem; color: var(--text-2); white-space: nowrap; }
+.si-inline { display: inline-block; width: 0.95em; height: 0.95em; margin-right: 0.3em; vertical-align: -0.12em; opacity: 1; }
 .marquee-track .si { display: inline-block; margin-right: 0.45rem; vertical-align: -2px; }
 .marquee-track li::before { content: "◆"; font-size: 0.5rem; color: var(--accent); margin-right: 2.5rem; vertical-align: middle; }
 @keyframes marquee { to { transform: translateX(-50%); } }
