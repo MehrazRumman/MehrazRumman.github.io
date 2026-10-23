@@ -331,6 +331,10 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .code-window i, .code-window b, .code-window u { font-style: normal; font-weight: 400; text-decoration: none; }
 .code-window .t { color: #67e8f9; } .code-window .s { color: #a5e6a1; } .code-window .n { color: #fbbf77; } .code-window .k { color: #c4b5fd; } .code-window .c { color: #6e6e78; }
 
+.app-head { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 0.5rem; }
+.app-head .project-title { margin-bottom: 0; }
+.app-icon { flex: none; width: 56px; height: 56px; border-radius: 14px; border: 1px solid var(--border); box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.6); }
+
 /* ---------- Open source ---------- */
 .oss { display: block; padding: 1.3rem 1.4rem; }
 .oss-top { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
