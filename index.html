@@ -43,6 +43,9 @@
         "dateModified": "2026-10-23",
         "mainEntity": {
           "@id": "https://mehrazrumman.github.io/rumman-portfolio/#person"
+        },
+        "hasPart": {
+          "@id": "https://mehrazrumman.github.io/rumman-portfolio/#projects"
         }
       },
       {
@@ -93,6 +96,12 @@
           "https://codeforces.com/profile/keai33",
           "https://www.fiverr.com/pythonmaestro07",
           "https://www.upwork.com/freelancers/~0183c2a0c4b50eb969"
+        ],
+        "award": [
+          "Champion, Jagannath University Intra-University Programming Contest (2021)",
+          "Champion, KYAU National Hackathon",
+          "Honourable Mention, ICPC Dhaka Regional (2021)",
+          "Google Summer of Code 2025 contributor, IOOS"
         ]
       },
       {
@@ -103,6 +112,85 @@
         "publisher": {
           "@id": "https://mehrazrumman.github.io/rumman-portfolio/#person"
         }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mehrazrumman.github.io/rumman-portfolio/#projects",
+        "name": "Selected projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "GoRTB",
+              "description": "OpenRTB 2.5 implementation in Go with typed structs and validation.",
+              "codeRepository": "https://github.com/MehrazRumman/gortb",
+              "programmingLanguage": "Go",
+              "author": {
+                "@id": "https://mehrazrumman.github.io/rumman-portfolio/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "fastapi-inspector (fastapi-observer)",
+              "description": "Structured logging and observability middleware for FastAPI with a built-in dashboard.",
+              "codeRepository": "https://github.com/MehrazRumman/fastapi-observer",
+              "programmingLanguage": "Python",
+              "url": "https://pypi.org/project/fastapi-inspector/",
+              "author": {
+                "@id": "https://mehrazrumman.github.io/rumman-portfolio/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "CV Generator",
+              "description": "Browser-based CV, Europass, biodata and academic CV builder with live PDF preview and Bangla support.",
+              "codeRepository": "https://github.com/MehrazRumman/cv-generator",
+              "programmingLanguage": "TypeScript",
+              "author": {
+                "@id": "https://mehrazrumman.github.io/rumman-portfolio/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Bangladesh Road Accidents 2021–2026",
+              "description": "Analysis of Road Safety Foundation and BRTA road accident data with an interactive Bangla map.",
+              "url": "https://mehrazrumman.github.io/BD-Road-Accident/",
+              "isBasedOn": "https://github.com/MehrazRumman/BD-Road-Accident",
+              "image": "https://mehrazrumman.github.io/rumman-portfolio/assets/img/road-accident-map.webp",
+              "author": {
+                "@id": "https://mehrazrumman.github.io/rumman-portfolio/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Dengue in Bangladesh: hot zones, burden and deaths (2000–2026)",
+              "description": "Open analysis of DGHS dengue surveillance data: hotspot maps, case fatality and seasonality.",
+              "url": "https://github.com/MehrazRumman/dengue-analysis",
+              "image": "https://mehrazrumman.github.io/rumman-portfolio/assets/img/dengue-map.webp",
+              "author": {
+                "@id": "https://mehrazrumman.github.io/rumman-portfolio/#person"
+              }
+            }
+          }
+        ]
       }
     ]
   }
@@ -179,9 +267,9 @@
             Résumé
           </a>
           <ul class="socials" aria-label="Profiles">
-            <li><a class="icon-btn" href="https://github.com/MehrazRumman" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
-            <li><a class="icon-btn" href="https://www.linkedin.com/in/mehraz-rumman/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
-            <li><a class="icon-btn" href="https://medium.com/@MehrazHossainRumman" target="_blank" rel="noopener" aria-label="Medium"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h3l5 9 5-9h3M4 18h4M16 18h4M12 15v3"/></svg></a></li>
+            <li><a class="icon-btn" href="https://github.com/MehrazRumman" target="_blank" rel="me noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.linkedin.com/in/mehraz-rumman/" target="_blank" rel="me noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a class="icon-btn" href="https://medium.com/@MehrazHossainRumman" target="_blank" rel="me noopener" aria-label="Medium"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h3l5 9 5-9h3M4 18h4M16 18h4M12 15v3"/></svg></a></li>
             <li><a class="icon-btn" href="mailto:mehrazrumman@gmail.com" aria-label="Email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></li>
           </ul>
         </div>
@@ -213,7 +301,7 @@
               <li><strong id="gh-followers">18</strong> followers</li>
               <li id="gh-stars-item" hidden><strong id="gh-stars">—</strong> stars</li>
             </ul>
-            <a class="id-link" href="https://github.com/MehrazRumman" target="_blank" rel="noopener">github.com/MehrazRumman <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="id-link" href="https://github.com/MehrazRumman" target="_blank" rel="me noopener">github.com/MehrazRumman <span class="arr" aria-hidden="true">↗</span></a>
           </div>
           <span class="id-sheen" aria-hidden="true"></span>
         </div>
@@ -437,7 +525,7 @@ body, _ := json.Marshal(req)</code></pre>
           <p>Notebook merging OBIS and GBIF occurrences with environmental layers: One-Class SVM anomaly detection, temporal trends and SDM maps. Taught as a workshop at Hacking Limnology 2025.</p>
           <ul class="chips"><li>scikit-learn</li><li>xarray</li><li>SDM</li></ul>
         </a>
-        <a class="card project reveal" href="https://github.com/MehrazRumman" target="_blank" rel="noopener">
+        <a class="card project reveal" href="https://github.com/MehrazRumman" target="_blank" rel="me noopener">
           <div class="project-top"><span class="mono">Full-stack</span><span class="arr-box" aria-hidden="true">↗</span></div>
           <div class="app-head"><span class="logo-tile logo-mark" aria-hidden="true">KM</span><h3 class="project-title">KachaMorich</h3></div>
           <p>E-commerce app: accounts, purchasing, payments, profiles and order reviews for customers; user and product management, role promotion, and order status controls for admins.</p>
@@ -666,7 +754,7 @@ body, _ := json.Marshal(req)</code></pre>
       <header class="section-head reveal">
         <p class="eyebrow">08 — Competitive programming</p>
         <h2 class="section-title">Contests &amp; hackathons</h2>
-        <p class="section-sub">Specialist on <a href="https://codeforces.com/profile/keai33" target="_blank" rel="noopener"><i class="si si-inline" style="--si:url(assets/img/icons/codeforces.svg)" aria-hidden="true"></i>Codeforces</a> as keai33 · 3★ on <i class="si si-inline" style="--si:url(assets/img/icons/codechef.svg)" aria-hidden="true"></i>CodeChef · problems on <i class="si si-inline" style="--si:url(assets/img/icons/leetcode.svg)" aria-hidden="true"></i>LeetCode and <i class="si si-inline" style="--si:url(assets/img/icons/hackerrank.svg)" aria-hidden="true"></i>HackerRank.</p>
+        <p class="section-sub">Specialist on <a href="https://codeforces.com/profile/keai33" target="_blank" rel="me noopener"><i class="si si-inline" style="--si:url(assets/img/icons/codeforces.svg)" aria-hidden="true"></i>Codeforces</a> as keai33 · 3★ on <i class="si si-inline" style="--si:url(assets/img/icons/codechef.svg)" aria-hidden="true"></i>CodeChef · problems on <i class="si si-inline" style="--si:url(assets/img/icons/leetcode.svg)" aria-hidden="true"></i>LeetCode and <i class="si si-inline" style="--si:url(assets/img/icons/hackerrank.svg)" aria-hidden="true"></i>HackerRank.</p>
       </header>
 
       <ul class="grid grid-2 ranks">
@@ -751,24 +839,24 @@ body, _ := json.Marshal(req)</code></pre>
           </button>
         </div>
         <div class="freelance" aria-label="Freelance profiles">
-          <a class="freelance-card" href="https://www.fiverr.com/pythonmaestro07" target="_blank" rel="noopener">
+          <a class="freelance-card" href="https://www.fiverr.com/pythonmaestro07" target="_blank" rel="me noopener">
             <span class="freelance-name"><img class="freelance-logo" src="assets/img/logos/fav-fiverr.png" alt="" width="22" height="22" loading="lazy">Fiverr</span>
             <span class="freelance-handle mono">@pythonmaestro07</span>
             <span class="freelance-stars" aria-label="5 out of 5 stars">★★★★★ <b>5.0</b></span>
           </a>
-          <a class="freelance-card" href="https://www.upwork.com/freelancers/~0183c2a0c4b50eb969?mp_source=share" target="_blank" rel="noopener">
+          <a class="freelance-card" href="https://www.upwork.com/freelancers/~0183c2a0c4b50eb969?mp_source=share" target="_blank" rel="me noopener">
             <span class="freelance-name"><img class="freelance-logo" src="assets/img/logos/fav-upwork.png" alt="" width="22" height="22" loading="lazy">Upwork</span>
             <span class="freelance-handle mono">Top-rated freelancer</span>
             <span class="freelance-stars" aria-label="5 out of 5 stars">★★★★★ <b>5.0</b></span>
           </a>
         </div>
         <p class="contact-links">
-          <a href="https://github.com/MehrazRumman" target="_blank" rel="noopener"><i class="si si-inline" style="--si:url(assets/img/icons/github.svg)" aria-hidden="true"></i>GitHub</a>
-          <a href="https://www.linkedin.com/in/mehraz-rumman/" target="_blank" rel="noopener"><i class="si si-inline" style="--si:url(assets/img/icons/linkedin.svg)" aria-hidden="true"></i>LinkedIn</a>
-          <a href="https://www.fiverr.com/pythonmaestro07" target="_blank" rel="noopener"><i class="si si-inline" style="--si:url(assets/img/icons/fiverr-mark.png)" aria-hidden="true"></i>Fiverr</a>
-          <a href="https://www.upwork.com/freelancers/~0183c2a0c4b50eb969?mp_source=share" target="_blank" rel="noopener"><i class="si si-inline" style="--si:url(assets/img/icons/upwork.svg)" aria-hidden="true"></i>Upwork</a>
-          <a href="https://medium.com/@MehrazHossainRumman" target="_blank" rel="noopener"><i class="si si-inline" style="--si:url(assets/img/icons/medium.svg)" aria-hidden="true"></i>Medium</a>
-          <a href="https://codeforces.com/profile/keai33" target="_blank" rel="noopener"><i class="si si-inline" style="--si:url(assets/img/icons/codeforces.svg)" aria-hidden="true"></i>Codeforces</a>
+          <a href="https://github.com/MehrazRumman" target="_blank" rel="me noopener"><i class="si si-inline" style="--si:url(assets/img/icons/github.svg)" aria-hidden="true"></i>GitHub</a>
+          <a href="https://www.linkedin.com/in/mehraz-rumman/" target="_blank" rel="me noopener"><i class="si si-inline" style="--si:url(assets/img/icons/linkedin.svg)" aria-hidden="true"></i>LinkedIn</a>
+          <a href="https://www.fiverr.com/pythonmaestro07" target="_blank" rel="me noopener"><i class="si si-inline" style="--si:url(assets/img/icons/fiverr-mark.png)" aria-hidden="true"></i>Fiverr</a>
+          <a href="https://www.upwork.com/freelancers/~0183c2a0c4b50eb969?mp_source=share" target="_blank" rel="me noopener"><i class="si si-inline" style="--si:url(assets/img/icons/upwork.svg)" aria-hidden="true"></i>Upwork</a>
+          <a href="https://medium.com/@MehrazHossainRumman" target="_blank" rel="me noopener"><i class="si si-inline" style="--si:url(assets/img/icons/medium.svg)" aria-hidden="true"></i>Medium</a>
+          <a href="https://codeforces.com/profile/keai33" target="_blank" rel="me noopener"><i class="si si-inline" style="--si:url(assets/img/icons/codeforces.svg)" aria-hidden="true"></i>Codeforces</a>
         </p>
       </div>
     </section>
