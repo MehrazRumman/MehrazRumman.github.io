@@ -334,11 +334,6 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .pcard-body .project-top { min-height: 30px; }
 .pcard-body { display: flex; flex-direction: column; flex: 1; padding: 1.3rem 1.4rem 1.4rem; }
 .pcard-body .chips { margin-top: auto; padding-top: 0.9rem; }
-.logo-cover { display: grid; place-items: center; background: radial-gradient(circle at 50% 120%, color-mix(in srgb, var(--c) 45%, transparent), transparent 70%), radial-gradient(var(--dot) 1px, transparent 1px) 0 0 / 16px 16px, var(--surface-2); }
-.logo-cover .logo-tile { width: 72px; height: 72px; padding: 12px; border-radius: 18px; box-shadow: 0 18px 40px -16px color-mix(in srgb, var(--c) 70%, #000); transition: transform 0.3s ease; }
-.logo-cover .logo-bleed { padding: 4px; }
-.logo-cover .logo-mark { font-size: 1.05rem; padding: 0; }
-.pcard:hover .logo-cover .logo-tile { transform: translateY(-3px) scale(1.04); }
 .code-window { display: flex; flex-direction: column; background: #0b0b10; container-type: inline-size; }
 .code-bar { flex: none; display: flex; align-items: center; gap: 6px; padding: 0.6rem 0.9rem; border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
 .code-bar span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255, 255, 255, 0.14); }
@@ -365,6 +360,7 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .oss-logo { flex: none; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border); background: #fff; object-fit: contain; }
 .oss-mark { display: grid; place-items: center; font-family: var(--mono); font-size: 0.66rem; font-weight: 600; color: var(--text-2); background: var(--surface-2); }
 .oss p { color: var(--text-2); font-size: 0.93rem; }
+.oss-wide { grid-column: span 2; }
 
 /* ---------- Skills / ranks / posts ---------- */
 .skill { padding: 1.3rem 1.4rem; }
@@ -463,6 +459,7 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 @media (max-width: 640px) {
   .tile-github, .tile-now, .tile-stats, .tile-about, .tile-edu, .tile-geo { grid-column: span 12; grid-row: auto; }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .oss-wide { grid-column: auto; }
   .rank { flex-wrap: wrap; gap: 0.6rem 0.8rem; }
   .rank > span:last-child { flex-basis: 100%; }
   .analysis-stats { grid-template-columns: 1fr 1fr 1fr; gap: 0.4rem; }
