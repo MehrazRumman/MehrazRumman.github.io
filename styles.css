@@ -162,6 +162,8 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 @keyframes ping { 0% { transform: scale(0.5); opacity: 0.9; } 100% { transform: scale(1.7); opacity: 0; } }
 .hero-title { font-size: clamp(2.7rem, 6.5vw, 4.6rem); letter-spacing: -0.035em; line-height: 1.02; }
 .hero-lead { margin-top: 1.4rem; font-size: clamp(1.02rem, 1.4vw, 1.15rem); color: var(--text-2); max-width: 54ch; }
+.hero-lead a { color: var(--text); border-bottom: 1px solid var(--border-strong); }
+.hero-lead a:hover { border-color: var(--accent); }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem; margin-top: 1.9rem; }
 .socials { display: flex; gap: 0.4rem; margin-left: 0.4rem; }
 
