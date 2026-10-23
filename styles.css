@@ -348,6 +348,11 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .app-icon.logo-mark { font-size: 0.9rem; box-shadow: none; }
 .app-icon { flex: none; width: 56px; height: 56px; border-radius: 14px; border: 1px solid var(--border); box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.6); }
 
+.project-wide { display: grid; grid-template-columns: 1.15fr 1fr; padding: 0; }
+.project-wide .analysis-cover { aspect-ratio: auto; height: 100%; min-height: 340px; border-bottom: 0; border-right: 1px solid var(--border); background: #18181b; }
+.project-wide .analysis-cover img { object-position: 78% top; }
+.project-wide .analysis-body { padding: 1.75rem; }
+
 /* ---------- Open source ---------- */
 .oss { display: block; padding: 1.3rem 1.4rem; }
 .oss-top { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
@@ -435,6 +440,8 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
   .tl-item::before { left: 4px; top: 1.5rem; }
   .tl-item::after { left: 0; top: 0.35rem; }
   .tl-meta { padding-top: 0; grid-auto-flow: column; justify-content: start; gap: 1rem; }
+  .project-wide { grid-template-columns: 1fr; }
+  .project-wide .analysis-cover { aspect-ratio: 1400 / 875; height: auto; min-height: 0; border-right: 0; border-bottom: 1px solid var(--border); }
 }
 @media (max-width: 820px) {
   .nav-toggle { display: grid; }
