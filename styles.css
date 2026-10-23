@@ -223,6 +223,8 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .tile-label { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 0.65rem; }
 .tile-title { font-size: 1.3rem; margin-bottom: 0.5rem; }
 .tile-text { color: var(--text-2); font-size: 0.95rem; }
+.tile .tile-logo { position: absolute; top: 0.95rem; right: 0.95rem; width: 36px; height: 36px; padding: 5px; border-radius: 10px; border: 1px solid var(--border); background: #fff; object-fit: contain; }
+.tile .tile-logo-bleed { padding: 2px; }
 .tile-now { grid-column: span 5; grid-row: span 2; }
 .tile-now .chips { margin-top: 1rem; }
 .tile-stats { grid-column: span 4; grid-row: span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
