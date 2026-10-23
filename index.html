@@ -51,7 +51,7 @@
         "name": "Mehraz Hossain Rumman",
         "alternateName": "Mehraz Rumman",
         "url": "https://mehrazrumman.github.io/rumman-portfolio/",
-        "image": "https://avatars.githubusercontent.com/u/59512321?v=4",
+        "image": "https://mehrazrumman.github.io/rumman-portfolio/assets/img/avatar.webp",
         "email": "mailto:mehrazrumman@gmail.com",
         "jobTitle": "Software Engineer",
         "description": "Backend engineer in Dhaka building real-time ad-tech with Django and ClickHouse. Google Summer of Code 2025 contributor at IOOS.",
@@ -109,7 +109,10 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <!-- Fonts load without blocking first paint; text shows in the fallback font until they arrive. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&amp;family=Geist+Mono:wght@400..600&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&amp;family=Geist+Mono:wght@400..600&amp;display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&amp;family=Geist+Mono:wght@400..600&amp;display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
   <script>
     // Apply a saved theme before first paint to avoid a flash. Dark is the default.
@@ -191,7 +194,7 @@
             <span class="id-chip" aria-hidden="true"><span></span><span></span><span></span></span>
           </div>
           <div class="id-person">
-            <img class="id-photo" src="https://avatars.githubusercontent.com/u/59512321?v=4" alt="Portrait of Mehraz Hossain Rumman" width="96" height="96">
+            <img class="id-photo" src="assets/img/avatar.webp" fetchpriority="high" alt="Portrait of Mehraz Hossain Rumman" width="96" height="96">
             <div class="id-who">
               <p class="id-name">Mehraz Hossain Rumman</p>
               <p class="id-role">Software Engineer · Adfinix</p>
