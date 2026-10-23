@@ -366,6 +366,7 @@ a.card:hover, .project:hover { border-color: var(--border-strong); transform: tr
 .post-logo { flex: none; width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border); background: #fff; object-fit: contain; }
 .post-logo.logo-mark { background: var(--surface-2); color: var(--text); }
 .post-logo .si { width: 15px; height: 15px; opacity: 1; }
+.flag { flex: none; width: 28px; height: 21px; border-radius: 4px; box-shadow: 0 0 0 1px var(--border); object-fit: cover; }
 .post-title { font-size: 1.15rem; margin: 0.8rem 0 0.4rem; }
 .post p { color: var(--text-2); font-size: 0.9rem; }
 
