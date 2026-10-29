@@ -1,0 +1,22 @@
+# Mehraz Hossain Rumman
+
+> Python software engineer and AdTech engineer in Dhaka, Bangladesh. Builds real-time bidding (OpenRTB) backends with Django, FastAPI, Go and ClickHouse. Automation and web scraping developer. Online Python tutor since 2022. Google Summer of Code 2025 contributor (IOOS). Open-source contributor to Celery, Kombu, Django REST Framework, Scrapy and Django.
+
+## Roles
+- Software Engineer at Adfinix (AdTech: DSP/SSP tracking, CPM ads, frequency capping, real-time analytics), 2024 to present
+- Python developer: Django, Django REST Framework, FastAPI, Celery
+- Automation and web scraping developer: Scrapy, Playwright, Slack bots, data pipelines
+- Python tutor: beginner to intermediate Python, data structures and algorithms (students in the US and Bangladesh)
+
+## Projects
+- [gortb](https://github.com/MehrazRumman/gortb): OpenRTB 2.5 implementation in Go
+- [fastapi-observer](https://github.com/MehrazRumman/fastapi-observer): logging and observability middleware for FastAPI
+- [BD-Road-Accident](https://github.com/MehrazRumman/BD-Road-Accident): Bangladesh road accident data analysis and map
+- [dengue-analysis](https://github.com/MehrazRumman/dengue-analysis): 26 years of dengue data in Bangladesh
+
+## Links
+- [Portfolio](https://mehrazrumman.github.io/rumman-portfolio/)
+- [GitHub](https://github.com/MehrazRumman)
+- [LinkedIn](https://www.linkedin.com/in/mehraz-rumman/)
+- [Medium](https://medium.com/@MehrazHossainRumman)
+- Contact: mehrazrumman@gmail.com
