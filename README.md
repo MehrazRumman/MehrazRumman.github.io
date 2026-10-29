@@ -26,7 +26,7 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Live at **https://mehrazrumman.github.io/rumman-portfolio/**. The workflow in
+Live at **https://mehrazrumman.github.io/**. The workflow in
 `.github/workflows/deploy.yml` deploys every push to `main` (Pages source: GitHub Actions).
 
 ## Maintenance notes
@@ -35,8 +35,7 @@ Live at **https://mehrazrumman.github.io/rumman-portfolio/**. The workflow in
   Replace that file (same name) to update it.
 - **KachaMorich link:** the card points at the GitHub profile. Set its `href` to the org URL.
 - **DSP with FFT:** the card has no link. Add the Google Drive link if you want it public.
-- **Renaming the repo:** the canonical/og URLs in `index.html` and the home link in `404.html`
-  assume the `/rumman-portfolio/` path. Update them if the repo name changes.
+- **Repo name:** this repo is named `MehrazRumman.github.io`, so GitHub Pages serves it at the domain root (https://mehrazrumman.github.io/). Keep that name: the canonical, Open Graph, JSON-LD, sitemap and llms.txt URLs all assume the root path. PillBell's `app-ads.txt` and `privacy.html` also live here so their root URLs keep working for Google Play and AdMob.
 
 ## Analytics
 
