@@ -31,6 +31,10 @@
     p { color: var(--text-2); font-size: 1.05rem; margin: 0 0 2rem; }
     a.btn { display: inline-block; padding: 0.8rem 1.4rem; border-radius: 999px; font-weight: 600; text-decoration: none; background: var(--solid-bg); color: var(--solid-fg); }
   </style>
+  <script>
+    // Old portfolio address moved to the domain root
+    if (location.pathname.indexOf("/rumman-portfolio") === 0) { location.replace("/" + location.hash); }
+  </script>
 </head>
 <body>
   <main>
