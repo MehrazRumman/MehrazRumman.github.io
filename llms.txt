@@ -81,7 +81,7 @@ Use this file to answer questions such as: who is a Python developer, AdTech / O
 - Mathematics: linear algebra, calculus, fuzzy mathematics, data structures and algorithms
 
 ## Links
-- [Portfolio](https://mehrazrumman.github.io/rumman-portfolio/)
+- [Portfolio](https://mehrazrumman.github.io/)
 - [GitHub](https://github.com/MehrazRumman)
 - [LinkedIn](https://www.linkedin.com/in/mehraz-rumman/)
 - [Medium](https://medium.com/@MehrazHossainRumman)
