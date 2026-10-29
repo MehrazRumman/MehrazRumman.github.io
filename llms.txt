@@ -7,6 +7,7 @@
 - Python developer: Django, Django REST Framework, FastAPI, Celery
 - Automation and web scraping developer: Scrapy, Playwright, Slack bots, data pipelines
 - Python tutor: beginner to intermediate Python, data structures and algorithms (students in the US and Bangladesh)
+- Competitive programmer (C++): 1,750+ problems solved on Codeforces (Izuku__Midoriya, max rating Specialist 1425); CodeChef 3 star (keai33, peak 1696, 45 contests)
 
 ## Projects
 - [gortb](https://github.com/MehrazRumman/gortb): OpenRTB 2.5 implementation in Go
@@ -19,4 +20,7 @@
 - [GitHub](https://github.com/MehrazRumman)
 - [LinkedIn](https://www.linkedin.com/in/mehraz-rumman/)
 - [Medium](https://medium.com/@MehrazHossainRumman)
+- [Codeforces](https://codeforces.com/profile/Izuku__Midoriya)
+- [CodeChef](https://www.codechef.com/users/keai33)
+- [Web scraping examples](https://github.com/MehrazRumman/python-web-scraping-automation)
 - Contact: mehrazrumman@gmail.com
